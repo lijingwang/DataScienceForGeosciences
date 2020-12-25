@@ -1,0 +1,297 @@
+Volcanic Eruptions of the World
+
+Magnitude is defined as M = log m - 7, where m is the mass of magma in kg. 
+Eruptions larger than M3.8 and younger than 1 BC are listed here.
+
+M	Year.MonthDay	Volcano
+
+5.4	1991.0812	Hudson (Chile-S)	America-S
+5.8	1991.0615	Pinatubo, Mt. (Luzon)	Philippines
+4.3	1990.1114	Unzen	Japan
+3.8	1990.0210	Kelut (Java)	Indonesia
+3.8	1986.1118	Chikurachki-Tatatinov	Kuriles
+3.8	1986.0327	Augustine (Alaska)	America-N
+4.0	1983.0723	Colo (Sulawesi)	Indonesia
+4.4	1982.0517	Galunggung (Java)	Indonesia
+4.8	1982.0403	Chichon, El (Mexico)	America-C
+4.7	1982.0328	Chichon, El (Mexico)	America-C
+4.6	1981.0515	Pagan, Mt. (Mariana Is)	Pacific-N
+4.6	1981.0430	Alaid	Kuriles
+4.8	1980.0518	St. Helens, Mt. (Washington)	America-N
+3.9	1977.0807	Toya Usu	Japan
+4.5	1976.0122	Augustine (Alaska)	America-N
+5.4	1975.0706	Tolbachik	Kamchatka
+4.1	1974.1010	Fuego (Guatemala)	America-C
+4.0	1973.0714	Chachadake	Japan
+4.1	1973.0714	Tiatia 	Kuriles
+3.8	1968.0611	Fernandina 	Galapagos
+4.0	1966.0812	Awu (Sangihe Is)	Indonesia
+3.8	1966.0426	Kelut (Java)	Indonesia
+3.8	1965.0928	Taal (Luzon)	Philippines
+4.7	1964.1112	Sheveluch 	Kamchatka
+4.8	1963.0317	Agung (Lesser Sunda Is)	Indonesia
+5.3	1956.0330	Bezymianny	Kamchatka
+4.6	1955.1013	Aira Sakurajima	Japan
+4.4	1955.0727	Carran-Los Venados (Chile-C)	America-S
+4.0	1953.0709	Spurr (Alaska)	America-N
+4.0	1952.0229	Bagna (Bougainville)	PNG
+4.0	1951.0121	Lamington (New Guinea)	PNG
+4.7	1951	Ambrym (Vanuatu)	Pacific-S
+5.2	1947.0329	Hekla	Iceland
+4.0	1946.1109	Sarychev Peak 	Kuriles
+4.3	1946.01	Aira Sakurajima	Japan
+4.3	1945.0225	Avachinsky 	Kamchatka
+4.6	1945.0101	Kliuchevskoi 	Kamchatka
+4.2	1944.0623	Toya Usu	Japan
+5.4	1943.0220	Michoacan Field (Mexico)	America-C
+4.3	1939.0818	I. Torishima	Japan
+4.3	1937.0529	Rabaul (New Britain)	PNG
+4.0	1933.1224	Kuchinoerabu	Japan
+4.1	1933.0710	Suoh (Sumatra)	Indonesia
+5.8	1932.0410	Azul, Cerro (Chile-C)	America-S
+4.0	1932.0121	Fuego (Guatemala)	America-C
+4.0	1931.0325	Kliuchevskoi 	Kamchatka
+	1930	Unknown	
+4.5	1929.0617	H. Komagatake	Japan
+4.0	1924.0215	Raikoke	Kuriles
+4.0	1919.0811	Manam (New Guinea-NE of)	PNG
+3.8	1919.0519	Kelut (Java)	Indonesia
+4.7	1918.1012	Katla	Iceland
+4.0	1918.0405	Tungurahua (Ecuador)	America-S
+4.0	1917.0409	Agrigan (Marian Is)	Pacific-N
+5.6	1914.0112	Aira Sakurajima	Japan
+4.6	1913.0120	Colima (Mexico)	America-C
+6.4	1912.0606	Novarupta (Alaska.)	America-N
+3.8	1912.0223	I. Oshima 	Japan
+4.6	1911.0130	Taal (Luzon)	Philippines
+5.1	1907.0328	Ksudach	Kamchatka
+3.8	1906.0404	Vesuvius (Italy)	Mediterranean
+5.3	1905.0804	Savai'i (Samoa)	Pacific-S
+4.0	1904.1114	Fukutokuoka no Ba	Japan
+4.6	1903.0528	Grimsvotn	Iceland
+5.9	1902.1024	Santa Maria (Guatemala)	America-C
+5.1	1902.0508	Pelee, Montagne	Caribbean
+5.4	1902.0506	Soufriere St.Vincent 	Caribbean
+3.8	1902.0502	Pelee, Montagne	Caribbean
+4.0	1899.1113	Dona Juana (Colombia)	America-S
+3.8	1897.0523	Mayon (Luzon)	Philippines
+	1894	Unknown	
+4.0	1893.0107	Calbuco (Chile-S)	America-S
+4.0	1890.0216	Colima (Mexico)	America-C
+4.6	1886.0831	Niuafo'ou  (Tonga)	Pacific-S
+5.1	1886.0610	Tarawera	New Zealand
+4.0	1886.0111	Tungurahua (Ecuador)	America-S
+4.7	1883.1006	Augustine (Alaska)	America-N
+6.1	1883.0827	Krakatau 	Indonesia
+4.7	1877.0626	Cotopaxi (Ecuador)	America-S
+4.3	1875.0329	Askja	Iceland
+3.8	1873.0108	Grimsvotn	Iceland
+4.3	1872.0415	Merapi (Java)	Indonesia
+4.0	1872	Sinarka	Kuriles
+5.3	1870.0221	Ceboruco, Volcan (Mexico)	America-C
+4.0	1869.1004	Purace (Colombia)	America-S
+4.6	1861.1228	Makian (Halmehera)	Indonesia
+4.2	1856.0925	H. Komagatake	Japan
+5.1	1854.0218	Sheveluch	Kamchatka
+4.8	1853.12	Chikurachki-Tatarinov	Kuriles
+4.0	1849.12	Purace (Colombia)	America-S
+6.0	1846.1126	Azul, Cerro (Chile-C)	America-S
+4.6	1846.10	Fonualei (Tonga)	Pacific-S
+5.1	1845.0902	Hekla	Iceland
+5.4	1835.0120	Cosiguina (Nicaragua)	America-C
+4.6	1831	Babuyan Claro (Luzon Is-N of)	Philippines
+4.6	1829.09	Kliuchevskoi	Kamchatka
+4.6	1826.1011	Kelut (Java)	Indonesia
+4.6	1825.0310	Isanotski (Aleutian)	America-N
+4.8	1822.1008	Galungung (Java)	Indonesia
+4.0	1818.0202	Colima (Mexico)	America-C
+4.6	1817.0116	Raung (Java)	Indonesia
+7.1	1815.0410	Tambora (Lesser Sunda Is)	Indonesia
+4.6	1814.0201	Mayon (Luzon)	Philippines
+4.1	1813	Suwanose	Japan
+4.6	1812.0806	Awu (Sangihe Is)	Indonesia
+4.6	1812.0427	Soufriere St.Vincent	Caribbean
+	1809	Unknown	
+3.8	1800.0115	St. Helens, Mt. (Washington)	America-N
+4.8	1795	Westdahl (Aleutian)	America-N
+4.5	1793.0302	San Martin,Volcan de(Mexico)	America-C
+4.0	1793.02	Alaid 	Kuriles
+4.6	1790.11	Kilauea 	Hawaii
+4.0	1787.0718	Etna (Italy)	Mediterranean
+4.6	1786	Pavlof Sister (Alaska)	America-N
+6.4	1783.0608	Grimsvotn	Iceland
+4.8	1783.0509	Asama	Japan
+4.0	1783.0326	Aogashima	Japan
+5.0	1779.1108	Aira Sakurajima	Japan
+4.0	1778	Raikoke	Kuriles
+4.5	1777.0831	I. Oshima	Japan
+4.7	1768.0404	Cotopaxi (Ecuador)	America-S
+5.4	1766.0405	Hekla 	Iceland
+5.3	1764	Michoacan Field (Mexico)	America-C
+4.0	1762.1203	Planchon-Peteroa (Chile-C)	America-S
+4.6	1760.0922	Makian (Halmahera)	Indonesia
+5.3	1760	Antisana (Ecuador)	America-S
+5.3	1759.0929	Michoacan Field (Mexico)	America-C
+5.0	1755.1017	Katla 	Iceland
+4.6	1754.1128	Taal (Luzon)	Philippines
+4.7	1744.1130	Cotopaxi (Ecuador)	America-S
+4.1	1741.0818	O. Oshima	Japan
+5.2	1739.0818	Shikotsu Tarumai	Japan
+5.9	1730.0901	Lanzarote (Canary Is)	Atlantic
+5.3	1728.1218	Krafla	Iceland
+4.1	1727.0803	Oraefajokull	Iceland
+5.6	1725	Savai'i (Samoa)	Pacific-S
+4.7	1721.0511	Katla	Iceland
+3.8	1720	Bravo, Cerro (Colombia)	America-S
+5.3	1719	Wudalianchi (China)	Korea/China
+4.2	1716.1109	Kirishima	Japan
+4.0	1716.0924	Taal (Luzon)	Philippines
+4.0	1712.1231	Chirpoi	Kuriles
+5.2	1707.1216	Fuji	Japan
+4.6	1693.0604	Serua (Banda Sea)	Indonesia
+4.3	1693.0213	Hekla	Iceland
+4.0	1690	Chikurachki-Tatarinov 	Kuriles
+4.3	1684.0329	I. Oshima	Japan
+4.8	1680	Tongkoko (Sulawesi)	Indonesia
+4.8	1673.0520	Gamkonora (Halmahera)	Indonesia
+5.4	1667.0923	Shikotsu Tarumai	Japan
+5.4	1663.0816	Toya Usu	Japan
+4.3	1660.1103	Katla 	Iceland
+4.6	1660.1027	Guagua Pichincha (Ecuador)	America-S
+4.6	1660.02	Teon (Banda Sea)	Indonesia
+6.3	1660	Long Island (New Guinea-NE of)	PNG
+4.5	1655	Ksudach	Kamchatka
+4.6	1650.0927	Santorini (Greece)	Mediterranean
+4.6	1646.0719	Makian (Halmahera)	Indonesia
+4.8	1641.0103	Awu (Sangihe Is)	Indonesia
+4.6	1641	Kelut (Java)	Indonesia
+5.4	1640.0731	H. Komagatake	Japan
+4.0	1640.02	Llaima (Chile-C)	America-S
+4.6	1638	Raung (Java)	Indonesia
+4.4	1636	I. Oshima	Japan
+4.6	1631.1216	Vesuvius (Italy)	Mediterranean
+4.3	1630.0903	Furnas (Azores)	Atlantic
+4.5	1625.0902	Katla	Iceland
+4.0	1622.0608	Colima (Mexico)	America-C
+5.3	1614.0701	Etna (Italy)	Mediterranean
+4.0	1606.1125	Colima (Mexico)	America-C
+4.1	1605	Momotombo (Nicaragua)	America-C
+	1602	Unknown	
+4.8	1600.0219	Huaynaputina (Peru)	America-S
+4.8	1600	Suwanose	Japan
+4.1	1597.0103	Hekla	Iceland
+4.1	1595.0312	Ruiz (Columbia)	America-S
+4.8	1593	Raung (Java)	Indonesia
+4.8	1586	Kelut (Java)	Indonesia
+4.0	1585.0110	Colima (Mexico)	America-C
+4.0	1580.1207	Galeras (Columbia)	America-S
+6.0	1580	Billy Mitchell (Bougainville)	PNG
+4.4	1563.0628	Agua de Pau (Azores)	Atlantic
+4.4	1552.0927J	I. Oshima	Japan
+3.8	1550	Maly Semiachik 	Kamchatka
+4.0	1540	Augustine (Alaska)	America-N
+4.0	1534.06	Cotopaxi (Ecuador)	America-S
+4.1	1525	Arenal (Costa Rica)	America-C
+4.3	1510.0725	Hekla	Iceland
+4.7	1490	Katla 	Iceland
+4.8	1482.0115	St. Helens, Mt. (Washington)	America-N
+4.8	1480.0115	St. Helens, Mt. (Washington)	America-N
+5.9	1477.03	Bardarbunga 
+	Iceland
+5.5	1471.1025J	Aira Sakurajima	Japan
+4.3	1444	Sete Cidades (Azores)	Atlantic
+4.0	1442.08	I. Oshima	Japan
+6.8	1425	Kuwae (Vanuatu)	Pacific-S
+4.1	1416	Katla	Iceland
+5.8	1362.0605	Oraefajokull 	Iceland
+4.9	1361	N. Yakeyama	Japan
+4.3	1357	Katla	Iceland
+4.8	1350	Kikhpinych 	Kamchatka
+4.9	1350	Inyo Craters (California)	America-N
+4.1	1350	Ruiz (Columbia)	America-S
+5.0	1345	Mono Craters (California)	America-N
+4.3	1325	Bravo, Cerro (Colombia)	America-S
+4.1	1311.0118	Katla	Iceland
+5.1	1300.0711	Hekla	Iceland
+4.4	1300	Pelee, Montagne	Caribbean
+4.3	1267	I. Oshima	Japan
+	1259	Unknown	
+4.1	1170	Furnas (Azores)	Atlantic
+4.7	1158.0119	Hekla	Iceland
+4.7	1112.1104J	I. Oshima	Japan
+5.1	1108.0824J	Asama	Japan
+5.2	1104.1015	Hekla	Iceland
+5.3	1075	Medicine Lake (California)	America-N
+5.6	1050	Tolbachik 	Kamchatka
+4.4	1050	Bravo, Cerro (Colombia)	America-S
+5.7	1030	Billy Mitchell (Bougainville)	PNG
+5.5	1020	Tarawera 	New Zealand
+4.0	1000	Kutcharo	Japan
+5.4	1000	Tolbachik 	Kamchatka
+5.0	1000	Sheveluch	Kamchatka
+4.0	1000	Katla	Iceland
+3.8	999	Fuji 	Japan
+5.3	970	Kutcharo	Japan
+5.2	950	Tolbachik	Kamchatka
+4.3	950	Bezymianny 	Kamchatka
+5.5	950	Ceboruco, Volcan (Mexico)	America-C
+7.4	946	Baitoushan (China/Korea)	Korea/China
+4.4	936	I. Oshima	Japan
+6.3	934	Katla	Iceland
+5.7	915.0817J	Towada	Japan
+4.8	900	Ksudach	Kamchatka
+5.4	900	Tolbachik 	Kamchatka
+5.3	900	Bardarbunga 
+	Iceland
+5.1	887	N. Yakeyama	Japan
+5.2	886.0629J	Niijima	Japan
+4.1	886.0625J	I. Oshima	Japan
+4.4	885.0825J	Ata Kaimon	Japan
+4.5	874.0325J	Ata Kaimon	Japan
+4.4	864.06	Fuji	Japan
+4.3	840	Niijina	Japan
+4.1	840	Furnas (Azores)	Atlantic
+5.2	838.0729J	Kozushima	Japan
+	829	Unknown	
+4.1	810	Mono Craters (California)	America-N
+6.1	800	Zuni-Bandera (New Mexico)	America-N
+5.3	788.0414J	Kirishima	Japan
+4.5	771	Beppu Tsurumi	Japan
+4.3	764	Aira Sakurajima	Japan
+4.8	751	I. Oshima	Japan
+4.4	750	Bravo, Cerro (Colombia)	America-S
+4.5	700	Bezymianny 	Kamchatka
+6.1	700	Bona-Churchill (Alaska)	America-N
+4.6	660	Ata Kaimon	Japan
+4.3	654	I. Oshima	Japan
+	623	Unknown
+	
+4.3	595	Inyo Craters (California)	America-N
+5.5	550	Tolbachik	Kamchatka
+4.9	540	Haruna	Japan
+5.9	536	Rabaul (New Britain)	PNG
+4.0	512.0708	Vesuvius (Italy)	Mediterranean
+4.8	510	Haruna	Japan
+5.0	500	Sheveluch	Kamchatka
+4.3	472.1105	Vesuvius (Italy)	Mediterranean
+5.6	450	Tolbachik	Kamchatka
+5.8	430	Opala	Kamchatka
+5.1	400	Tolbachik	Kamchatka
+4.3	380	Sete Cidades (Azores)	Atlantic
+4.8	350	Asama	Japan
+4.3	315	Newberry Volcano (Oregon)	America-N
+4.4	280	Pelee, Montagne	Caribbean
+6.2	260	Ilopango (El Salvador)	America-C
+4.6	250	Beppu Yufu	Japan
+4.4	210	Aso	Japan
+4.7	200	Glacier Peak (Washington)	America-N
+5.3	190	Khodutka 	Kamchatka
+6.0	155	Ksudach 	Kamchatka
+6.7	130	Taupo Volc Centre	New Zealand
+4.6	100	Aso	Japan
+4.4	90	Sete Cidades (Azores)	Atlantic
+5.8	79.0824	Vesuvius  (Italy)	Mediterranean
+6.2	65	Bona-Churchill (Alaska)	America-N
+5.1	50	Tolbachik 	Kamchatka
+4.6	000	Aso	Japan
+4.3	000	K. Yakedake	Japan
