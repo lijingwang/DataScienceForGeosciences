@@ -51,7 +51,6 @@ M	Year.MonthDay	Volcano
 5.8	1932.0410	Azul, Cerro (Chile-C)	America-S
 4.0	1932.0121	Fuego (Guatemala)	America-C
 4.0	1931.0325	Kliuchevskoi 	Kamchatka
-	1930	Unknown	
 4.5	1929.0617	H. Komagatake	Japan
 4.0	1924.0215	Raikoke	Kuriles
 4.0	1919.0811	Manam (New Guinea-NE of)	PNG
@@ -75,7 +74,6 @@ M	Year.MonthDay	Volcano
 3.8	1902.0502	Pelee, Montagne	Caribbean
 4.0	1899.1113	Dona Juana (Colombia)	America-S
 3.8	1897.0523	Mayon (Luzon)	Philippines
-	1894	Unknown	
 4.0	1893.0107	Calbuco (Chile-S)	America-S
 4.0	1890.0216	Colima (Mexico)	America-C
 4.6	1886.0831	Niuafo'ou  (Tonga)	Pacific-S
@@ -111,7 +109,6 @@ M	Year.MonthDay	Volcano
 4.1	1813	Suwanose	Japan
 4.6	1812.0806	Awu (Sangihe Is)	Indonesia
 4.6	1812.0427	Soufriere St.Vincent	Caribbean
-	1809	Unknown	
 3.8	1800.0115	St. Helens, Mt. (Washington)	America-N
 4.8	1795	Westdahl (Aleutian)	America-N
 4.5	1793.0302	San Martin,Volcan de(Mexico)	America-C
@@ -176,7 +173,6 @@ M	Year.MonthDay	Volcano
 5.3	1614.0701	Etna (Italy)	Mediterranean
 4.0	1606.1125	Colima (Mexico)	America-C
 4.1	1605	Momotombo (Nicaragua)	America-C
-	1602	Unknown	
 4.8	1600.0219	Huaynaputina (Peru)	America-S
 4.8	1600	Suwanose	Japan
 4.1	1597.0103	Hekla	Iceland
@@ -196,8 +192,7 @@ M	Year.MonthDay	Volcano
 4.7	1490	Katla 	Iceland
 4.8	1482.0115	St. Helens, Mt. (Washington)	America-N
 4.8	1480.0115	St. Helens, Mt. (Washington)	America-N
-5.9	1477.03	Bardarbunga 
-	Iceland
+5.9	1477.03	Bardarbunga Iceland
 5.5	1471.1025	Aira Sakurajima	Japan
 4.3	1444	Sete Cidades (Azores)	Atlantic
 4.0	1442.08	I. Oshima	Japan
@@ -215,7 +210,6 @@ M	Year.MonthDay	Volcano
 5.1	1300.0711	Hekla	Iceland
 4.4	1300	Pelee, Montagne	Caribbean
 4.3	1267	I. Oshima	Japan
-	1259	Unknown	
 4.1	1170	Furnas (Azores)	Atlantic
 4.7	1158.0119	Hekla	Iceland
 4.7	1112.1104	I. Oshima	Japan
@@ -241,8 +235,7 @@ M	Year.MonthDay	Volcano
 5.7	915.0817	Towada	Japan
 4.8	900	Ksudach	Kamchatka
 5.4	900	Tolbachik 	Kamchatka
-5.3	900	Bardarbunga 
-	Iceland
+5.3	900	Bardarbunga Iceland
 5.1	887	N. Yakeyama	Japan
 5.2	886.0629	Niijima	Japan
 4.1	886.0625	I. Oshima	Japan
@@ -252,7 +245,6 @@ M	Year.MonthDay	Volcano
 4.3	840	Niijina	Japan
 4.1	840	Furnas (Azores)	Atlantic
 5.2	838.0729J	Kozushima	Japan
-	829	Unknown	
 4.1	810	Mono Craters (California)	America-N
 6.1	800	Zuni-Bandera (New Mexico)	America-N
 5.3	788.0414J	Kirishima	Japan
@@ -264,8 +256,6 @@ M	Year.MonthDay	Volcano
 6.1	700	Bona-Churchill (Alaska)	America-N
 4.6	660	Ata Kaimon	Japan
 4.3	654	I. Oshima	Japan
-	623	Unknown
-	
 4.3	595	Inyo Craters (California)	America-N
 5.5	550	Tolbachik	Kamchatka
 4.9	540	Haruna	Japan
