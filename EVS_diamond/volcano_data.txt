@@ -187,7 +187,7 @@ M	Year.MonthDay	Volcano
 4.0	1580.1207	Galeras (Columbia)	America-S
 6.0	1580	Billy Mitchell (Bougainville)	PNG
 4.4	1563.0628	Agua de Pau (Azores)	Atlantic
-4.4	1552.0927J	I. Oshima	Japan
+4.4	1552.0927	I. Oshima	Japan
 3.8	1550	Maly Semiachik 	Kamchatka
 4.0	1540	Augustine (Alaska)	America-N
 4.0	1534.06	Cotopaxi (Ecuador)	America-S
@@ -198,7 +198,7 @@ M	Year.MonthDay	Volcano
 4.8	1480.0115	St. Helens, Mt. (Washington)	America-N
 5.9	1477.03	Bardarbunga 
 	Iceland
-5.5	1471.1025J	Aira Sakurajima	Japan
+5.5	1471.1025	Aira Sakurajima	Japan
 4.3	1444	Sete Cidades (Azores)	Atlantic
 4.0	1442.08	I. Oshima	Japan
 6.8	1425	Kuwae (Vanuatu)	Pacific-S
@@ -218,8 +218,8 @@ M	Year.MonthDay	Volcano
 	1259	Unknown	
 4.1	1170	Furnas (Azores)	Atlantic
 4.7	1158.0119	Hekla	Iceland
-4.7	1112.1104J	I. Oshima	Japan
-5.1	1108.0824J	Asama	Japan
+4.7	1112.1104	I. Oshima	Japan
+5.1	1108.0824	Asama	Japan
 5.2	1104.1015	Hekla	Iceland
 5.3	1075	Medicine Lake (California)	America-N
 5.6	1050	Tolbachik 	Kamchatka
@@ -238,16 +238,16 @@ M	Year.MonthDay	Volcano
 7.4	946	Baitoushan (China/Korea)	Korea/China
 4.4	936	I. Oshima	Japan
 6.3	934	Katla	Iceland
-5.7	915.0817J	Towada	Japan
+5.7	915.0817	Towada	Japan
 4.8	900	Ksudach	Kamchatka
 5.4	900	Tolbachik 	Kamchatka
 5.3	900	Bardarbunga 
 	Iceland
 5.1	887	N. Yakeyama	Japan
-5.2	886.0629J	Niijima	Japan
-4.1	886.0625J	I. Oshima	Japan
-4.4	885.0825J	Ata Kaimon	Japan
-4.5	874.0325J	Ata Kaimon	Japan
+5.2	886.0629	Niijima	Japan
+4.1	886.0625	I. Oshima	Japan
+4.4	885.0825	Ata Kaimon	Japan
+4.5	874.0325	Ata Kaimon	Japan
 4.4	864.06	Fuji	Japan
 4.3	840	Niijina	Japan
 4.1	840	Furnas (Azores)	Atlantic
