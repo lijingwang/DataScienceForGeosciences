@@ -1,4 +1,4 @@
-Dataset download from MeteoSwiss:
+All datasets are downloaded from MeteoSwiss:
 
 - Zürich / Fluntern: North-eastern plateau
 - Engelberg: Central Alpine north slope
