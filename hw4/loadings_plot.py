@@ -45,7 +45,7 @@ def loadings_plot(fa_loadings, loading_names, var_exp_prop, n_fctr = 4):
   
   ax = fig.add_subplot(111)
   for idx in range(len(xaxis_loadings[:,1])):
-      if np.abs(xaxis_loadings[idx,1])>0.5:
+      if np.abs(xaxis_loadings[idx,1])>0.3:
           ax.scatter(xaxis_loadings[idx,0], xaxis_loadings[idx,1], s=50, c='C1')
       else:
           ax.scatter(xaxis_loadings[idx,0], xaxis_loadings[idx,1], s=10, c='C0')
@@ -58,7 +58,7 @@ def loadings_plot(fa_loadings, loading_names, var_exp_prop, n_fctr = 4):
   # make vertical lines to separate factors
   plt.vlines(x=np.cumsum(x_axis[:-1]), ymin=-1, ymax=1), plt.vlines(x=np.sum(x_axis)+2, ymin=-1, ymax=1)
   plt.hlines(y=0, xmin=-5, xmax=x_axis.sum()+1)
-  plt.hlines(y=[0.5, -0.5], xmin=-5, xmax=x_axis.sum()+1, linestyles='--', linewidth=0.5)
+  plt.hlines(y=[0.3, -0.3], xmin=-5, xmax=x_axis.sum()+1, linestyles='--', linewidth=0.5)
   
   # y-axis labels and ticks
   plt.ylim(-1, 1), ax.set_ylabel('Loadings', fontsize=14), ax.yaxis.set_tick_params(labelsize=13)
