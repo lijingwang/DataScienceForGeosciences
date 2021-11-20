@@ -1,5 +1,4 @@
 # Data Science for Geosciences
----------
 
 Author: Lijing Wang, David Zhen Yin, Jef Caers
 
