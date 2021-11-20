@@ -1,2 +1,8 @@
-# GEOLSCI6
-Data Science for Geoscience Winter 2021 @ Stanford
+# Data Science for Geosciences
+---------
+
+Author: Lijing Wang, David Zhen Yin, Jef Caers
+
+- Python notebooks
+- Public geoscientific datasets
+- Code for each figure
