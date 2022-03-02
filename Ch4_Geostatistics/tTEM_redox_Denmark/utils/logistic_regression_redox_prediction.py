@@ -29,10 +29,7 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid):
     nearby_tTEM = surrounding_tTEM_multiple_borehole(tTEM_sgsim*grid_mask,
                                                      redox_loc,bz = bz,by = by,bx = bx)
     
-    # Fill in the NA by mean
-    row_mean = np.nanmean(nearby_tTEM,axis = 1)
-    inds = np.where(np.isnan(nearby_tTEM))
-    nearby_tTEM[inds] = np.take(row_mean, inds[0])
+    nearby_tTEM[np.isnan(nearby_tTEM)] = 0
     
     # PCA of the surrounding
     sample_idx = np.random.choice(np.where(~np.isnan(nearby_tTEM[:,0]))[0],1000)
@@ -45,39 +42,39 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid):
     nearby_tTEM_borehole = surrounding_tTEM_multiple_borehole(tTEM_sgsim*grid_mask,redox_borehole,bz = bz,by = by,bx = bx)
     y = np.array(redox_grid[~np.isnan(redox_grid)],dtype = 'int64')
 
-    row_mean = np.nanmean(nearby_tTEM_borehole,axis = 1)
-    inds = np.where(np.isnan(nearby_tTEM_borehole))
-    nearby_tTEM_borehole[inds] = np.take(row_mean, inds[0])
+    nearby_tTEM_borehole[np.isnan(nearby_tTEM_borehole)] = 0
+
     
-    # Only training on the borehole with relative certain surrounding data
-    training_idx = np.unique(np.where(~np.isnan(nearby_tTEM_borehole))[0])
-    
-    X = np.hstack([pca.transform(nearby_tTEM_borehole[training_idx,:])[:,:40],
+    # logistic regression
+    X = np.hstack([pca.transform(nearby_tTEM_borehole)[:,:40],
                np.array(DEM_int[np.where(~np.isnan(redox_grid))[1],
-                        np.where(~np.isnan(redox_grid))[2]]-np.where(~np.isnan(redox_grid))[0])[training_idx].reshape(-1,1)])
-    
-    clf = LogisticRegression(random_state=10, solver='lbfgs').fit(X, y[training_idx])
+                        np.where(~np.isnan(redox_grid))[2]]-np.where(~np.isnan(redox_grid))[0]).reshape(-1,1)])
+
+    clf = LogisticRegression(random_state=10, solver='lbfgs').fit(X, y)
     y_pred = clf.predict(X)
-    
+
+
     # Accuracy
-    acc = accuracy_score(y[training_idx],y_pred)
-    
+    acc = accuracy_score(y,y_pred)
+
     # Confusion matrix
-    conf_matrix = confusion_matrix(y[training_idx],y_pred)
-    
+    conf_matrix = confusion_matrix(y,y_pred)
+
     # Inference
     # Apply/Predict on both area
-    DEM_multiple = np.zeros(sgsim_mean.shape)
+    DEM_multiple = np.zeros((nz,ny,nx))
     DEM_multiple = DEM_multiple+DEM_int
-    test_idx_all = np.unique(np.where(~np.isnan(nearby_tTEM[:,0:1]))[0])
-    
+    DEM_multiple = DEM_multiple.reshape(-1)
+
     y_test = np.zeros(nx*ny*nz)
     y_test[:] = np.nan
 
     start = 0
     sep = 50000
-    for end in np.arange(0,test_idx_all.shape[0],sep)+sep:
-        test_idx = test_idx_all[start:end]
+    for end in tqdm(np.arange(0,nx*ny*nz,sep)+sep):
+        if end>=nx*ny*nz:
+            end = nx*ny*nz
+        test_idx = np.arange(start,end)
         test_pc_scores = pca.transform(nearby_tTEM[test_idx,:])[:,:40]
         X_test = np.hstack([test_pc_scores,
                             np.array(DEM_multiple.reshape(-1)-np.where(sgsim_mean)[0].reshape(-1))[test_idx].reshape(-1,1)])
