@@ -77,7 +77,7 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
         test_idx = np.arange(start,end)
         test_pc_scores = pca.transform(nearby_tTEM[test_idx,:])[:,:40]
         X_test = np.hstack([test_pc_scores,
-                            np.array(DEM_multiple.reshape(-1)-np.where(sgsim_mean)[0].reshape(-1))[test_idx].reshape(-1,1)])
+                            DEM_multiple[test_idx].reshape(-1,1)])
         y_test[test_idx] = clf.predict(X_test)
         start = end
 
