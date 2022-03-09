@@ -1,6 +1,8 @@
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix,accuracy_score
+from sklearn.metrics import ConfusionMatrixDisplay
+from statsmodels.discrete.discrete_model import MNLogit
 import numpy as np
 from tqdm import tqdm
 
@@ -50,9 +52,12 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
                np.array(DEM_int[np.where(~np.isnan(redox_grid))[1],
                         np.where(~np.isnan(redox_grid))[2]]-np.where(~np.isnan(redox_grid))[0]).reshape(-1,1)])
 
-    clf = LogisticRegression(random_state=10, solver='lbfgs').fit(X, y)
-    y_pred = clf.predict(X)
+    # fit the logistic regression model 
+    logit_model = MNLogit(y,X)
+    logit_fit = logit_model.fit()
 
+    y_pred_prob = logit_fit.predict(X)
+    y_pred = np.argmax(y_pred_prob,axis = 1)
 
     # Accuracy
     acc = accuracy_score(y,y_pred)
@@ -78,9 +83,38 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
         test_pc_scores = pca.transform(nearby_tTEM[test_idx,:])[:,:40]
         X_test = np.hstack([test_pc_scores,
                             DEM_multiple[test_idx].reshape(-1,1)])
-        y_test[test_idx] = clf.predict(X_test)
+        y_test[test_idx] = np.argmax(logit_fit.predict(X_test),axis = 1)
         start = end
 
     y_test = np.array(y_test.reshape(nz,ny,nx),dtype = 'float64')
-    
-    return y_test*grid_mask, pca, clf, acc, conf_matrix, X
+
+    return y_test*grid_mask, pca, logit_fit, acc, conf_matrix, X, y, y_pred_prob
+
+
+def precision_recall(y_pred_prob,threshold,y):
+    prediction = (y_pred_prob[:,0]>threshold)
+    TP = np.sum(prediction[y==0]) # 
+    PP = np.sum(prediction) # predicted positive
+    P = np.sum(y==0)# positive
+    precision = TP/PP
+    if np.isnan(precision):
+        precision = 1
+    recall = TP/P
+    return [precision,recall]
+
+
+def precision_recall_plot(y_pred_prob,y):
+    label_list = ['0: reduced', '1: reducing', '2: oxic']
+    for cat in range(3):
+        PR = np.array([precision_recall(y_pred_prob[:,cat:(cat+1)],threshold, (y!=cat)*1) for threshold in np.linspace(0,1,100)])
+        plt.plot(PR[:,1],PR[:,0],'-', label = label_list[cat] )
+    plt.legend()
+    plt.xlabel('Recall')
+    plt.ylabel('Precision')
+
+
+def confusion_matrix_plot(conf_matrix):
+    label_list = ['0: reduced', '1: reducing', '2: oxic']
+    disp = ConfusionMatrixDisplay(confusion_matrix=conf_matrix,display_labels=label_list)
+    fig, ax = plt.subplots(figsize=(10,10))
+    disp.plot(ax= ax, cmap = 'Blues')
