@@ -45,11 +45,11 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
     nearby_tTEM_borehole = surrounding_tTEM_multiple_borehole(tTEM_sgsim*grid_mask,redox_borehole,bz = bz,by = by,bx = bx)
     y = np.array(redox_grid[~np.isnan(redox_grid)],dtype = 'int64')
 
-    nearby_tTEM_borehole[np.isnan(nearby_tTEM_borehole)] = 0
+    nearby_tTEM_borehole[np.isnan(nearby_tTEM_borehole)] = np.nanmean(tTEM_detrend_sgsim[:,:,:,i])
 
     
     # logistic regression
-    X = np.hstack([pca.transform(nearby_tTEM_borehole)[:,:40],
+    X = np.hstack([pca.fit_transform(nearby_tTEM_borehole)[:,:40],
                np.array(DEM_int[np.where(~np.isnan(redox_grid))[1],
                         np.where(~np.isnan(redox_grid))[2]]-np.where(~np.isnan(redox_grid))[0]).reshape(-1,1)])
 
