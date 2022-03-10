@@ -5,6 +5,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 from statsmodels.discrete.discrete_model import MNLogit
 import numpy as np
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 
 def surrounding_tTEM_multiple_borehole(tTEM,redox_loc_list,bz = 1,by = 1, bx = 1):
     nearby_tTEM = np.zeros((redox_loc_list.shape[0],(bz*2+1)*(by*2+1)*(bx*2+1)))
@@ -71,7 +72,7 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
     DEM_multiple = DEM_multiple+DEM_int
     DEM_multiple = DEM_multiple.reshape(-1)
 
-    y_test = np.zeros(nx*ny*nz)
+    y_test = np.zeros(nx*ny*nz,3)
     y_test[:] = np.nan
 
     start = 0
@@ -83,10 +84,10 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
         test_pc_scores = pca.transform(nearby_tTEM[test_idx,:])[:,:40]
         X_test = np.hstack([test_pc_scores,
                             DEM_multiple[test_idx].reshape(-1,1)])
-        y_test[test_idx] = np.argmax(logit_fit.predict(X_test),axis = 1)
+        y_test[test_idx,:] = logit_fit.predict(X_test)
         start = end
 
-    y_test = np.array(y_test.reshape(nz,ny,nx),dtype = 'float64')
+    y_test = np.array(y_test.reshape(nz,ny,nx,3),dtype = 'float64')
 
     return y_test*grid_mask, pca, logit_fit, acc, conf_matrix, X, y, y_pred_prob
 
