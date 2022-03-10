@@ -72,7 +72,7 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
     DEM_multiple = DEM_multiple+DEM_int
     DEM_multiple = DEM_multiple.reshape(-1)
 
-    y_test = np.zeros(nx*ny*nz,3)
+    y_test = np.zeros((nx*ny*nz,3))
     y_test[:] = np.nan
 
     start = 0
@@ -89,7 +89,7 @@ def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
 
     y_test = np.array(y_test.reshape(nz,ny,nx,3),dtype = 'float64')
 
-    return y_test*grid_mask, pca, logit_fit, acc, conf_matrix, X, y, y_pred_prob
+    return y_test*grid_mask.reshape(nz,ny,nx,1), pca, logit_fit, acc, conf_matrix, X, y, y_pred_prob
 
 
 def precision_recall(y_pred_prob,threshold,y):
