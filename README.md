@@ -1,6 +1,6 @@
 # Data Science for the Geosciences
 
-Lijing Wang, David Zhen Yin, Jef Caers, Cambridge University Press, 2022 
+Lijing Wang, David Zhen Yin, Jef Caers, Cambridge University Press, 2023
 
 This repository includes
 1. supplementary python jupyter notebooks for this textbook, organzied by each chapter
