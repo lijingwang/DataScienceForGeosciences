@@ -27,7 +27,7 @@ def surrounding_tTEM_multiple_borehole(tTEM,redox_loc_list,bz = 1,by = 1, bx = 1
 
 def LR_redox(tTEM_sgsim,grid_mask,redox_grid,DEM_int,nx,ny,nz):
     # tTEM info, near the borehole (140m 140m 4m)
-    bz = 4;by = 7; bx = 7
+    bz = 4;by = 3; bx = 3
     redox_loc = np.array(np.where(tTEM_sgsim)).T
     nearby_tTEM = surrounding_tTEM_multiple_borehole(tTEM_sgsim*grid_mask,
                                                      redox_loc,bz = bz,by = by,bx = bx)
